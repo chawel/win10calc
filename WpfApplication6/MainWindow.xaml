@@ -1,0 +1,137 @@
+﻿<Window x:Class="Win10Calc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" SizeToContent="WidthAndHeight" MinHeight="320" MinWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" MinHeight="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="2" Margin="10, 10">
+            <TextBox x:Name="txtEquasion"/>
+        </Grid>
+        <Grid Grid.Row="0" Margin="10, 10">
+            <TextBox x:Name="txtResult" />
+        </Grid>
+        <Grid Grid.Row="1" Margin="10, 10, 10, 10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" MinHeight="50"/>
+                <RowDefinition Height="*" MinHeight="50"/>
+                <RowDefinition Height="*" MinHeight="50"/>
+                <RowDefinition Height="*" MinHeight="50"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Button x:Name="btnOne" Content="1" Click="btnDigitClick"></Button>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Button x:Name="btnTwo" Content="2" Click="btnDigitClick"></Button>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button x:Name="btnThree" Content="3" Click="btnDigitClick"></Button>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Button x:Name="btnDiv" Content="/" Click="btnSignClick"></Button>
+                </Grid>
+                <Grid Grid.Column="4">
+                    <Button x:Name="btnErase" Content="C" Click="btnErase_Click"></Button>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Button x:Name="btnFour" Content="4" Click="btnDigitClick"></Button>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Button x:Name="btnFive" Content="5" Click="btnDigitClick"></Button>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button x:Name="btnSix" Content="6" Click="btnDigitClick"></Button>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Button x:Name="binMul" Content="*" Click="btnSignClick"></Button>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Button x:Name="btnSeven" Content="7" Click="btnDigitClick"></Button>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Button x:Name="btnEight" Content="8" Click="btnDigitClick"></Button>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button x:Name="btnNine" Content="9" Click="btnDigitClick"></Button>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Button x:Name="btnSub" Content="-" Click="btnSignClick"></Button>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Button></Button>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Button></Button>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button></Button>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Button></Button>
+                </Grid>
+                <Grid Grid.Column="4">
+                    <Button></Button>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition MinWidth="50" Width="2*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                    <ColumnDefinition MinWidth="50" Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Button x:Name="btnZero" Content="0" Click="btnDigitClick"></Button>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Button x:Name="btnComa" Content="," Click="btnComaClick"></Button>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button x:Name="btnAdd" Content="+" Click="btnSignClick"></Button>
+                </Grid>
+                <Grid Grid.Column="4">
+                    <Button x:Name="btnEq" Content="=" Click="btnEq_Click"></Button>
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>
